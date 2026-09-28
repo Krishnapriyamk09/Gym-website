@@ -1,0 +1,1410 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222831;
+}
+
+
+/* ========================================
+   COMMON
+======================================== */
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    color: #FFD369;
+    font-size: xx-large;
+    text-align: center;
+}
+
+p {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    width: 100%;
+    height: 60px;
+
+    background-color: #393E46;
+    color: #FFD369;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e9db5a;
+
+    font-family: "Oswald", sans-serif;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+/* Header button */
+
+header button {
+    background-color: #FFD369;
+    color: #222831;
+
+    padding: 7px 15px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #222831;
+    color: #FFD369;
+}
+
+
+/* ========================================
+   BANNER
+======================================== */
+
+#banner {
+    position: relative;
+    width: 100%;
+}
+
+#banner video {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Banner content */
+
+#content {
+    position: absolute;
+
+    top: 20%;
+    right: 65%;
+
+    color: #FFD369;
+}
+
+#content h1 {
+    text-align: left;
+    font-size: 42px;
+}
+
+#content p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#content button {
+    background-color: #FFD369;
+    color: #222831;
+
+    margin-top: 30px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+#content button:hover {
+    background-color: #222831;
+    color: #FFD369;
+
+    box-shadow: 3px 2px 3px 2px #FFD369;
+}
+
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+#about {
+    padding: 70px 20px;
+}
+
+#about .row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 700px;
+}
+
+.c1 {
+    padding: 20px;
+}
+
+.c1 iframe {
+    width: 100%;
+    max-width: 700px;
+}
+
+.c2 {
+    margin-top: -20px;
+}
+
+#about h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 40px;
+
+    font-family: "Times New Roman", Times, serif;
+}
+
+#about p {
+    text-align: justify;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   WHATSAPP
+======================================== */
+
+#whatsapp {
+    position: fixed;
+
+    bottom: 10px;
+    right: 10px;
+
+    z-index: 200;
+}
+
+#whatsapp img {
+    width: 55px;
+}
+
+
+/* ========================================
+   PRO PASS SECTION
+======================================== */
+
+#pass {
+    padding: 70px 5%;
+
+    height: auto;
+}
+
+#pro {
+    margin-top: 20px;
+
+    margin-bottom: 60px;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 36px;
+}
+
+
+/* Pro Pass row */
+
+.pass-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: stretch;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Pro Pass card */
+
+.pass-card {
+    width: 31%;
+
+    min-height: 500px;
+
+    background-color: #456882;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.pass-card:hover {
+    background-color: rgb(48, 48, 74);
+
+    border: 2px solid #456882;
+
+    transform: translateY(-8px);
+}
+
+
+/* Plan title */
+
+.pass-card h1 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Plan description */
+
+.pass-description {
+    font-size: 17px !important;
+
+    font-family: "Times New Roman", Times, serif !important;
+
+    line-height: 1.5;
+
+    margin-top: 15px !important;
+
+    margin-bottom: 15px;
+
+    min-height: 55px;
+}
+
+
+/* Price */
+
+.pass-card h2 {
+    color: #FFD369;
+
+    font-family: "Oswald", sans-serif;
+
+    font-size: 25px;
+
+    margin: 10px 0 20px;
+}
+
+
+/* Features */
+
+.pass-card ul {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.pass-card ul li {
+    width: 100%;
+
+    list-style: none;
+
+    color: white;
+
+    font-family: "Oswald", sans-serif;
+
+    font-size: 16px;
+
+    margin: 7px 0;
+
+    text-align: left;
+}
+
+
+/* Choose Plan button */
+
+.pass-card button {
+    margin-top: auto;
+
+    background-color: #FFD369;
+
+    color: #222831;
+
+    padding: 10px 25px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.pass-card button:hover {
+    background-color: #222831;
+
+    color: #FFD369;
+
+    border: 1px solid #FFD369;
+}
+
+
+/* ========================================
+   TRAINER SECTION
+======================================== */
+
+#trainer {
+    padding: 70px 5%;
+
+    height: auto;
+}
+
+#meet {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+}
+
+
+/* Trainer row */
+
+.trainer-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: stretch;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Trainer card */
+
+.trainer-card {
+    width: 31%;
+
+    background-color: #456882;
+
+    padding: 18px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.trainer-card:hover {
+    background-color: rgb(48, 48, 74);
+
+    transform: translateY(-8px);
+}
+
+
+/* Trainer image */
+
+.trainer-card img {
+    width: 100%;
+
+    height: auto;
+
+    max-height: 300px;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 20px;
+}
+
+
+/* Trainer name */
+
+.trainer-card h2 {
+    text-align: center;
+
+    color: #e9db5a;
+
+    margin-top: 15px;
+
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Trainer description */
+
+.trainer-card p {
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    width: 100%;
+
+    background-color: #FFD369;
+
+    color: #222831;
+
+    margin-top: 100px;
+}
+
+
+/* Footer top */
+
+.footer-top {
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.footer-top h2 {
+    font-size: 30px;
+
+    font-family: "Oswald", sans-serif;
+
+    letter-spacing: 2px;
+
+    color: #222831;
+
+    margin-bottom: 20px;
+}
+
+.footer-top p {
+    color: #393E46;
+
+    font-size: 22px;
+}
+
+.footer-top span {
+    color: black;
+
+    font-weight: bold;
+}
+
+
+/* Footer row */
+
+.footer-row {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding: 60px 50px;
+
+    background: rgb(44, 41, 41);
+}
+
+
+/* Footer columns */
+
+.footer-col {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 180px;
+
+    margin-bottom: 25px;
+}
+
+.footer-col h3 {
+    color: whitesmoke;
+
+    text-decoration: underline;
+
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 6px 0;
+
+    font-family: "Oswald", sans-serif;
+}
+
+.footer-col a:hover {
+    color: #FFD86B;
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    border-top: 1px solid black;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background: #111;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* Social icons */
+
+.footer-icon {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer-icon img {
+    width: 40px;
+
+    height: 40px;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    /* Header */
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+
+    /* Banner */
+
+    #content {
+        top: 15%;
+        right: 50%;
+    }
+
+    #content h1 {
+        font-size: 30px;
+    }
+
+    #content p {
+        font-size: 20px;
+    }
+
+
+    /* About */
+
+    .col {
+        width: 90%;
+    }
+
+
+    /* Pro Pass */
+
+    .pass-card {
+        width: 45%;
+    }
+
+
+    /* Trainers */
+
+    .trainer-card {
+        width: 45%;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 15px 10px;
+
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    header button {
+        padding: 7px 15px;
+    }
+
+
+    /* Banner */
+
+    #banner video {
+        height: 450px;
+
+        object-fit: cover;
+    }
+
+    #content {
+        top: 25%;
+
+        left: 8%;
+        right: 8%;
+    }
+
+    #content h1 {
+        font-size: 30px;
+    }
+
+    #content p {
+        font-size: 18px;
+    }
+
+
+    /* About */
+
+    #about {
+        padding: 40px 15px;
+    }
+
+    .col {
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+    .c1 {
+        padding: 5px;
+    }
+
+    .c1 iframe {
+        width: 100%;
+
+        height: 250px;
+    }
+
+    .c2 {
+        margin-top: 10px;
+    }
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 17px;
+    }
+
+
+    /* Pro Pass */
+
+    #pass {
+        padding: 50px 20px;
+    }
+
+    #pro {
+        font-size: 30px;
+
+        margin-bottom: 40px;
+    }
+
+    .pass-row {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .pass-card {
+        width: 100%;
+
+        min-height: 450px;
+
+        padding: 25px;
+    }
+
+    .pass-card h1 {
+        font-size: 24px;
+    }
+
+    .pass-description {
+        font-size: 16px !important;
+    }
+
+    .pass-card h2 {
+        font-size: 23px;
+    }
+
+
+    /* Trainers */
+
+    #trainer {
+        padding: 50px 20px;
+    }
+
+    #meet {
+        font-size: 30px;
+
+        margin-bottom: 35px;
+    }
+
+    .trainer-row {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .trainer-card {
+        width: 100%;
+    }
+
+    .trainer-card img {
+        width: 100%;
+
+        height: auto;
+
+        max-height: 300px;
+
+        object-fit: contain;
+    }
+
+
+    /* Footer */
+
+    .footer-top {
+        padding: 50px 20px;
+    }
+
+    .footer-top h2 {
+        font-size: 25px;
+    }
+
+    .footer-top p {
+        font-size: 18px;
+    }
+
+    .footer-row {
+        padding: 40px 25px;
+
+        justify-content: flex-start;
+    }
+
+    .footer-col {
+        width: 45%;
+
+        min-width: 140px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-icon {
+        justify-content: center;
+    }
+
+
+    /* WhatsApp */
+
+    #whatsapp img {
+        width: 50px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+    /* Header */
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 4px 7px;
+    }
+
+
+    /* Banner */
+
+    #content h1 {
+        font-size: 24px;
+    }
+
+    #content p {
+        font-size: 16px;
+    }
+
+    #content button {
+        margin-top: 20px;
+    }
+
+
+    /* About */
+
+    #about h1 {
+        font-size: 27px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+
+    /* Pro Pass */
+
+    #pro {
+        font-size: 27px;
+    }
+
+    .pass-card {
+        min-height: 450px;
+    }
+
+    .pass-card h1 {
+        font-size: 22px;
+    }
+
+    .pass-card ul li {
+        font-size: 15px;
+    }
+
+
+    /* Trainers */
+
+    #meet {
+        font-size: 27px;
+    }
+
+    .trainer-card p {
+        font-size: 15px;
+    }
+
+
+    /* Footer */
+
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   EXTRA RESPONSIVE FIX
+======================================== */
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    #banner video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #content {
+        left: 5%;
+        right: auto;
+        top: 20%;
+        width: 45%;
+    }
+
+    #content h1 {
+        font-size: 32px;
+    }
+
+    #content p {
+        font-size: 20px;
+    }
+
+    #about .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .c1 iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    .pass-row {
+        justify-content: center;
+    }
+
+    .pass-card {
+        width: 45%;
+    }
+
+    .trainer-row {
+        justify-content: center;
+    }
+
+    .trainer-card {
+        width: 45%;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+
+    header button {
+        padding: 8px 20px;
+    }
+
+
+    /* BANNER */
+
+    #banner {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    #banner video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+#content {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: auto;
+    width: 45%;
+    color: #FFD369;
+    text-align: left;
+}
+
+
+    #content h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    #content p {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-top: 15px;
+    }
+
+    #content button {
+        margin-top: 20px;
+        padding: 10px 18px;
+    }
+
+
+    /* ABOUT */
+
+    #about {
+        padding: 50px 15px;
+    }
+
+    #about .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .c1 {
+        padding: 0;
+    }
+
+    .c1 iframe {
+        width: 100%;
+        height: 230px;
+    }
+
+    #about h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        font-size: 17px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+
+    /* PRO PASS */
+
+    #pass {
+        padding: 50px 15px;
+    }
+
+    #pro {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .pass-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .pass-card {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    .pass-card h1 {
+        font-size: 24px;
+    }
+
+    .pass-description {
+        font-size: 16px !important;
+    }
+
+    .pass-card h2 {
+        font-size: 22px;
+    }
+
+    .pass-card ul li {
+        font-size: 15px;
+    }
+
+
+    /* TRAINERS */
+
+    #trainer {
+        padding: 50px 15px;
+    }
+
+    #meet {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .trainer-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .trainer-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .trainer-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .trainer-card h2 {
+        font-size: 24px;
+    }
+
+    .trainer-card p {
+        font-size: 16px;
+    }
+
+
+    /* WHATSAPP */
+
+    #whatsapp {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    #whatsapp img {
+        width: 50px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        margin-top: 60px;
+    }
+
+    .footer-top {
+        padding: 50px 20px;
+    }
+
+    .footer-top h2 {
+        font-size: 24px;
+    }
+
+    .footer-top p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .footer-row {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer-col h3 {
+        font-size: 17px;
+    }
+
+    .footer-col a {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-icon {
+        justify-content: center;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 4px 6px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    #banner,
+    #banner video {
+        height: 450px;
+    }
+
+    #content {
+        top: 18%;
+        left: 15px;
+        right: 15px;
+    }
+
+    #content h1 {
+        font-size: 25px;
+    }
+
+    #content p {
+        font-size: 16px;
+    }
+
+    #content button {
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+
+    #about h1 {
+        font-size: 27px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    .c1 iframe {
+        height: 210px;
+    }
+
+    #pro,
+    #meet {
+        font-size: 27px;
+    }
+
+    .pass-card h1 {
+        font-size: 21px;
+    }
+
+    .trainer-card img {
+        height: 220px;
+    }
+
+    .footer-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        align-items: center;
+    }
+
+    .footer-top p {
+        font-size: 16px;
+    }
+}
